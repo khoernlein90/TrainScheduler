@@ -1,40 +1,30 @@
-.mainContainer {
-/*	border-width: 2px;
-	border-style: solid;
-	border-color: black;
-	border-radius: 6px;*/
-}
-.jumbotron {
-	margin: 20px;
-	margin-top: 30px;
-	/*background-color: #428bca;*/
-	background: linear-gradient(to bottom right, #0033cc 0%, #99ccff 100%);
-	border-width: 1.5px;
-	border-style: solid;
-	border-color: black;
-	border-radius: 6px;
+header {
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/background.jpg);
+  height: 23vh;
 }
 .card-header {
-	background: linear-gradient(to bottom right, #0033cc 0%, #99ccff 100%);
+  background: linear-gradient(to bottom right, #0033cc 0%, #99ccff 100%);
 }
 #submitBtn {
-	background: linear-gradient(to bottom right, #0033cc 0%, #99ccff 100%);
-	color: black;
+  background: linear-gradient(to bottom right, #0033cc 0%, #99ccff 100%);
+  color: black;
 }
 .trainInput {
-	margin-bottom: 20px;
-	border-width: 1.5px;
-	border-style: solid;
-	border-color: black;
-	border-radius: 6px;
+  margin-bottom: 20px;
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 6px;
 }
 .trainField {
-	border-width: 1.5px;
-	border-style: solid;
-	border-color: black;
-	border-radius: 6px;
-	padding: .2px;
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 6px;
+  padding: 0.2px;
 }
- body {
- 	background-image:url(https://static1.squarespace.com/static/541ca6ace4b09194f7659e16/t/5871aa7f17bffcd05868336b/1483844226159/dark_spots_texture_background_50355_1920x1080.jpg?format=2500w);
- }
+body {
+  background-image: url(https://static1.squarespace.com/static/541ca6ace4b09194f7659e16/t/5871aa7f17bffcd05868336b/1483844226159/dark_spots_texture_background_50355_1920x1080.jpg?format=2500w);
+}

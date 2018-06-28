@@ -1,0 +1,55 @@
+body {
+  font-size: 20px;
+  background: #eee;
+}
+header {
+  background-size: cover;
+  background-position: center;
+  /* background-image: url(../images/background.jpg); */
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.699)),
+      to(rgba(0, 0, 0, 0.699))
+    ),
+    url(../images/background.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)),
+    url(../images/background.jpg);
+  height: 24vh;
+  display: grid;
+}
+
+header h1 {
+  font-weight: lighter;
+  color: #fff;
+  font-size: 105px;
+  align-self: center;
+  text-align: center;
+}
+
+.mainContainer {
+  font-size: 85%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 10px;
+  margin: 15px auto;
+}
+.card {
+  -webkit-box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.card-header {
+  background: rgb(119, 119, 119);
+  color: #fff;
+}
+
+div.card h3 {
+  font-weight: 100;
+}
+
+#submitBtn {
+  width: 120px;
+  height: 55px;
+}

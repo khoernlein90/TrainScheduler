@@ -1,82 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Train Scheduler</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="./assets/css/main.css">
+	<link rel="stylesheet" href="./assets/css/queries.css">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAD9/f0AAAAAADAwMAACAgIA////APj4+AAEBAQA+vr6APz8/AAPDw8AAQEBAP7+/gCysrIAAwMDAAAAAAAAAAAAEUoiIiIiNBERRLpERFFEERFES0RAdEQREUQRERERtBERShEREREUERFBRBERRBQREUEaEREdFBERQREREREUERFBFEFsyRQREUFEREREFBERQUREREQUERFBhEcUQBQREUARREQRZBERREERERtEERFEREEUREQREUREQxRERBHAAwAAwAMAAMADAADAAwAAwAMAAMADAADAAwAAwAMAAMADAADAAwAAwAMAAMADAADAAwAAwAMAAMADAADAAwAA" rel="icon" type="image/x-icon" />
+	<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAD9/f0AAAAAADAwMAACAgIA////APj4+AAEBAQA+vr6APz8/AAPDw8AAQEBAP7+/gCysrIAAwMDAAAAAAAAAAAAEUoiIiIiNBERRLpERFFEERFES0RAdEQREUQRERERtBERShEREREUERFBRBERRBQREUEaEREdFBERQREREREUERFBFEFsyRQREUFEREREFBERQUREREQUERFBhEcUQBQREUARREQRZBERREERERtEERFEREEUREQREUREQxRERBHAAwAAwAMAAMADAADAAwAAwAMAAMADAADAAwAAwAMAAMADAADAAwAAwAMAAMADAADAAwAAwAMAAMADAADAAwAA"
+	 rel="icon" type="image/x-icon" />
 </head>
+
 <body>
-
-<div class="container mainContainer">
-	<div class="jumbotron text-center">
-		<h1>Schedule a Train!<br>
-		<small>Use the form on the left to add a train!</small>
-		</h1>
-	</div>
-
-	<div class="row">
-	<div class="col-md-4">
-	  	<div class="card trainInput">
-	    	<div class="card-header card-primary">
-	      		<h3 class="card-title"><strong>Add Train</strong></h3>
-	    	</div>
-	
-	<form class="table">
-		<div class="container">
-		  <div class="form-group">
-		    <label for="trainInput">Train Name</label>
-		    <input type="text" class="form-control" id="trainInput">
-		  </div>
-		  <div class="form-group">
-		    <label for="destinationInput">Destination</label>
-		    <input type="text" class="form-control" id="destinationInput">
-		  </div>
-		  <div class="form-group">
-		    <label for="trainTimeInput">First Train Time (Military Time HH:mm)</label>
-		    <input type="text" class="form-control" id="trainTimeInput">
-		  </div>
-		  <div class="form-group">
-		    <label for="frequencyInput">Frequency (min)</label>
-		    <input type="text" class="form-control" id="frequencyInput">
-		  </div>
-		<button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
-		</div>
-	</form>
-	
-	</div>
-	</div>
-			<div class="col-md-8">
-		  	<div class="card trainField">
-		    	<div class="card-header card-primary">
-		      		<h3 class="card-title"><strong>Train Schedule</strong></h3>
-		    	</div>
-				<table class="table" id="trainTable">
-				  <thead class="thead-default">
-				    <tr>
-				      <th>Train Name</th>
-				      <th>Destination</th>
-				      <th>Frequency (min)</th>
-				      <th>Next Arrival</th>
-				      <th>Minutes Away</th>
-				    </tr>
-				  </thead>
-				  <tbody>
-				  </tbody>
-				</table>
+	<header>
+		<h1>Train Scheduler</h1>
+	</header>
+	<div class="mainContainer">
+		<div class="card inputCard ">
+			<div class="card-header card-primary">
+				<h3 class="card-title">
+					Add Train
+				</h3>
 			</div>
+			<form class="table">
+				<div class="container">
+					<div class="form-group">
+						<label for="trainInput">Train Name</label>
+						<input type="text" class="form-control" id="trainInput">
+					</div>
+					<div class="form-group">
+						<label for="destinationInput">Destination</label>
+						<input type="text" class="form-control" id="destinationInput">
+					</div>
+					<div class="form-group">
+						<label for="trainTimeInput">First Train Time (Military Time HH:mm)</label>
+						<input type="text" class="form-control" id="trainTimeInput">
+					</div>
+					<div class="form-group">
+						<label for="frequencyInput">Frequency (min)</label>
+						<input type="text" class="form-control" id="frequencyInput">
+					</div>
+					<button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+				</div>
+			</form>
+		</div>
+
+		<div class="card tableCard" style="overflow-x:auto;">
+			<div class="card-header card-primary">
+				<h3 class="card-title">
+					<strong>Train Schedule</strong>
+				</h3>
+			</div>
+			<table class="table" id="trainTable">
+				<thead class="thead-default">
+					<tr>
+						<th>Train Name</th>
+						<th>Destination</th>
+						<th>Frequency (min)</th>
+						<th>Next Arrival</th>
+						<th>Minutes Away</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
 		</div>
 	</div>
 
-	</div>
-
-</div>
-
-<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
-<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script type="text/javascript" src="assets/js/app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+	 crossorigin="anonymous"></script>
+	<script type="text/javascript" src="assets/js/app.js"></script>
 </body>
+
 </html>
